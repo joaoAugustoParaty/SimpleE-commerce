@@ -196,11 +196,88 @@ header{
     margin-left: auto;
 }
 /*---------HOME------------*/
+.home{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: url(img/home.png) no-repeat center/cover;
+}
+.home__container{
+    align-items: center;
+    height: inherit;
+}
+.home__data{
+    padding: 2rem;
+    background-color: var(--white-color);
+}
 
+.home__title{
+    font-size: var(--biggest-font-size);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.home__title span{
+    color: var(--orange-color);
+}
+.home__description{
+    color: var(--gray-color);
+    margin-bottom: 2rem;
+
+}
+.home__btn{
+    padding: 1rem 2rem;
+    background-color: var(--orange-color);
+    color: var(--white-color);
+}
 /*---------BANNER------------*/
-
+.banner__container{
+    grid-row-gap: 2rem;
+}
+.banner__box{
+    height: 328px;
+    position: relative;
+}
+.banner__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: var(--z-back);
+    object-fit: cover;
+    object-position: top;
+}
+.banner__data{
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0.5rem;
+    background-color: var(--white-color);
+    padding: 1rem;
+}
+.banner__data h3{
+    font-size: var(--big-font-size);
+}
+.banner__data span{
+    color: var(--orange-color);
+}
+.banner__btn{
+    padding: 0.5rem 1rem;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    margin-top: 1rem;
+}
 /*---------PRODUCTS------------*/
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
 
+}
+.categories li{
+    padding: 0.2rem 1rem;
+}
 /*---------SERVICES------------*/
 
 /*---------FOOTER------------*/
