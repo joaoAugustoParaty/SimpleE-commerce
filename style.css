@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*---------CSS Variables------------*/
+:root{
+    --header-height: 3rem;
+
+    /*colors*/
+    --orange-color: #fc6453;
+    --orange-soft-color: #ffd8c8;
+
+    --white-color: #fff;
+    --black-color: #141414;
+    --gray-color: #555;
+    --gray-color-lighten: #f6f6f6;
+    --footer-color:#1b262c;
+
+    /* Font */
+    --body-font: 'Poppins', sans-serif;
+
+    --biggest-font-size: 2.5rem;
+    --big-font-size: 1.5rem;
+    --normal-font-size: .938rem;
+    --smaller-font-size: .813rem;
+
+    /* Font Weight */
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+
+    /* z-index */
+    --z-fixed: 100;
+    --z-back: -1;
+
+}
+
+@media screen and (min-width: 768px){
+    :root{
+        --biggest-font-size: 3rem;
+        --bigger-font-size: 2rem;
+        --big-font-size: 1.5rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: .857rem;
+    }
+}
+
+/*---------BASE------------*/
+*,::before,::after{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--medium);
+    color: var(--black-color);
+    line-height: 1.6;
+}
+
+h1,h2,h3,p,ul{
+    margin:0;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display:block;
+}
+
+i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/*---------CLASS CSS------------*/
+section{
+    padding: 4rem 0 3rem;
+}
+.section-title{
+    font-size: var(--big-font-size);
+    text-align: center;
+    letter-spacing: .1rem;
+}
+.section-description{
+    text-align: center;
+    color: var(--gray-color);
+    margin-bottom: 2rem;
+    display: block;
+}
+/*---------BUTTON------------*/
+
+/*---------LAYOUT------------*/
+
+/*---------NAV------------*/
+
+/*---------HOME------------*/
+
+/*---------BANNER------------*/
+
+/*---------PRODUCTS------------*/
+
+/*---------SERVICES------------*/
+
+/*---------FOOTER------------*/
+
+/*---------MEDIA QUERIS------------*/
