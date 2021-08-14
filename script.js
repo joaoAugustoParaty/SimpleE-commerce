@@ -50,7 +50,7 @@ categories.forEach(n => n.addEventListener('click', activeCategory))
 
 //Filter
 const itemBox = document.querySelectorAll('.products__item .item__box')
-let value = 'all';
+let value = 'sofa';
 filter(value);
 
 function filter(value){
