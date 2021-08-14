@@ -37,3 +37,34 @@ window.onscroll = ()=>{
         nav.classList.remove('scroll-header')
     }
 }
+
+// Products
+const categories = document.querySelectorAll('.categories li');
+
+function activeCategory(){
+    categories.forEach(n => n.classList.remove('active'))
+    this.classList.add('active')
+}
+
+categories.forEach(n => n.addEventListener('click', activeCategory))
+
+//Filter
+const itemBox = document.querySelectorAll('.products__item .item__box')
+let value = 'all';
+filter(value);
+
+function filter(value){
+    itemBox.forEach(show =>{
+        show.style.display = 'none';
+        if(show.getAttribute('data-id') ===value || value == 'all'){
+            show.style.display = 'flex';
+        }
+    })
+}
+
+categories.forEach(item =>{
+    item.addEventListener('click', ()=>{
+    let value = item.textContent;
+    filter(value);
+    })
+})
