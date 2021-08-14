@@ -324,6 +324,9 @@ header{
     transform: translateY(0);
 }
 /*---------SERVICES------------*/
+.services{
+    margin-bottom: 2rem;
+}
 .services__container{
     grid-row-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
